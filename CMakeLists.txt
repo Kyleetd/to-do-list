@@ -36,6 +36,7 @@ file(GLOB SOURCES src/*.cpp)
 # Define the source files
 set(SOURCES
     src/main.cpp 
+    src/todo.cpp
     imgui/imgui.cpp 
     imgui/imgui_demo.cpp 
     imgui/imgui_draw.cpp 

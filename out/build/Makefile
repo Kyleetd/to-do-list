@@ -414,6 +414,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TodoListApp.dir/build.make CMakeFiles/TodoListApp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/todo.o: src/todo.cpp.o
+.PHONY : src/todo.o
+
+# target to build an object file
+src/todo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TodoListApp.dir/build.make CMakeFiles/TodoListApp.dir/src/todo.cpp.o
+.PHONY : src/todo.cpp.o
+
+src/todo.i: src/todo.cpp.i
+.PHONY : src/todo.i
+
+# target to preprocess a source file
+src/todo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TodoListApp.dir/build.make CMakeFiles/TodoListApp.dir/src/todo.cpp.i
+.PHONY : src/todo.cpp.i
+
+src/todo.s: src/todo.cpp.s
+.PHONY : src/todo.s
+
+# target to generate assembly for a file
+src/todo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TodoListApp.dir/build.make CMakeFiles/TodoListApp.dir/src/todo.cpp.s
+.PHONY : src/todo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -453,6 +477,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/todo.o"
+	@echo "... src/todo.i"
+	@echo "... src/todo.s"
 .PHONY : help
 
 

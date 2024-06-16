@@ -5,8 +5,11 @@
 #include <glad/glad.h>
 #include <SDL.h>
 #include <SDL_opengl.h>
-#include <vector>
 #include <string>
+#include <iostream>
+#include <vector>
+
+#include "todo.h"
 
 int main(int argc, char* argv[])
 {
@@ -46,7 +49,9 @@ int main(int argc, char* argv[])
     // Load fonts
     io.Fonts->AddFontDefault(); // Default font
     ImFont* largeFont = io.Fonts->AddFontFromFileTTF("/Users/kylee/Downloads/League-Gothic/LeagueGothic-Regular.otf", 36.0f);
-    if (!largeFont)
+    ImFont* listHeaderFont = io.Fonts->AddFontFromFileTTF("/Users/kylee/Downloads/roboto/Roboto-Medium.ttf", 18.0f);
+    ImFont* listFont = io.Fonts->AddFontFromFileTTF("/Users/kylee/Downloads/roboto/Roboto-Regular.ttf", 16.0f);
+    if (!largeFont || !listHeaderFont || !listFont)
     {
         printf("Failed to load font!\n");
         return -1;
@@ -58,6 +63,12 @@ int main(int argc, char* argv[])
 
     // Convert RGB values to ImGui's range (0.0 - 1.0)
     ImVec4 background_color = ImVec4(3.0f / 255.0f, 123.0f / 255.0f, 252.0f / 255.0f, 1.0f);
+
+    // Initialize the to-do list
+    std::vector<Task> tasks;
+
+    // Variables for new task input
+    char newTaskDesc[256] = "";
 
     // Main loop
     bool done = false;
@@ -90,6 +101,37 @@ int main(int argc, char* argv[])
         ImVec2 textSize = ImGui::CalcTextSize(title);
         ImGui::SetCursorPosX((io.DisplaySize.x - textSize.x) * 0.5f);
         ImGui::Text("%s", title);
+        ImGui::PopFont();
+
+        // To-Do List UI
+        ImGui::Separator();
+        ImGui::PushFont(listHeaderFont);
+        ImGui::Text("Add a new task:");
+        ImGui::InputText("##newtask", newTaskDesc, IM_ARRAYSIZE(newTaskDesc));
+        if (ImGui::Button("Add Task"))
+        {
+            if (strlen(newTaskDesc) > 0)
+            {
+                addTask(tasks, newTaskDesc);
+                newTaskDesc[0] = '\0'; // Clear the input field
+            }
+        }
+        ImGui::PopFont();
+        ImGui::Separator();
+
+        // Display tasks
+        ImGui::PushFont(listFont);
+        for (auto& task : tasks)
+        {
+            ImGui::Checkbox(("##" + std::to_string(task.id)).c_str(), &task.completed);
+            ImGui::SameLine();
+            ImGui::Text("%s", task.description.c_str());
+            ImGui::SameLine();
+            if (ImGui::Button(("Remove##" + std::to_string(task.id)).c_str()))
+            {
+                removeTask(tasks, task.id);
+            }
+        }
         ImGui::PopFont();
 
         ImGui::End();

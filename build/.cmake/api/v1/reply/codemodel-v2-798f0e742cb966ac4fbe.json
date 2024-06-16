@@ -1,0 +1,228 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "_deps/sdl2-build",
+					"jsonFile" : "directory-_deps.sdl2-build-Debug-cd006e24a7567a80ef7e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "build/_deps/sdl2-src",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "_deps/glad-build",
+					"jsonFile" : "directory-_deps.glad-build-Debug-1eb73eed2df43b265e8d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "build/_deps/glad-src",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"build" : "imgui",
+					"jsonFile" : "directory-imgui-Debug-9501a8a71dcfe9b6b2a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "imgui",
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TodoListApp",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						8,
+						9
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "GLAD",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "ImGui",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						7
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2-Debug-0a629fe3da51dedd0783.json",
+					"name" : "SDL2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2-static::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2-static-Debug-980a21064abe64e1a681.json",
+					"name" : "SDL2-static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2_test::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2_test-Debug-ac40d4a8220ff4cbe24a.json",
+					"name" : "SDL2_test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2main::@45bd952f1071c035638d",
+					"jsonFile" : "target-SDL2main-Debug-448d77f8b80608665d99.json",
+					"name" : "SDL2main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "TodoListApp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-TodoListApp-Debug-f3a64549b1180558ac71.json",
+					"name" : "TodoListApp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glad::@f022c46af7fd79d63a94",
+					"jsonFile" : "target-glad-Debug-3e4d219ae53a04ed1584.json",
+					"name" : "glad",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glad-generate-files::@f022c46af7fd79d63a94",
+					"jsonFile" : "target-glad-generate-files-Debug-a4bbbb3a8c0e127c580d.json",
+					"name" : "glad-generate-files",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "imgui::@45ca6dacf63e9879b888",
+					"jsonFile" : "target-imgui-Debug-234d55c2bdb5274bfb57.json",
+					"name" : "imgui",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sdl_headers_copy::@45bd952f1071c035638d",
+					"jsonFile" : "target-sdl_headers_copy-Debug-964391af512158adbc1b.json",
+					"name" : "sdl_headers_copy",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@45bd952f1071c035638d",
+					"jsonFile" : "target-uninstall-Debug-96bec1956d58a139d5d3.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/kylee/Documents/Code/to-do-list/build",
+		"source" : "/Users/kylee/Documents/Code/to-do-list"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

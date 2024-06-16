@@ -83,10 +83,24 @@ CMakeFiles/TodoListApp.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TodoListApp.dir/src/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylee/Documents/Code/to-do-list/src/main.cpp -o CMakeFiles/TodoListApp.dir/src/main.cpp.s
 
+CMakeFiles/TodoListApp.dir/src/todo.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
+CMakeFiles/TodoListApp.dir/src/todo.cpp.o: /Users/kylee/Documents/Code/to-do-list/src/todo.cpp
+CMakeFiles/TodoListApp.dir/src/todo.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TodoListApp.dir/src/todo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/src/todo.cpp.o -MF CMakeFiles/TodoListApp.dir/src/todo.cpp.o.d -o CMakeFiles/TodoListApp.dir/src/todo.cpp.o -c /Users/kylee/Documents/Code/to-do-list/src/todo.cpp
+
+CMakeFiles/TodoListApp.dir/src/todo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TodoListApp.dir/src/todo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kylee/Documents/Code/to-do-list/src/todo.cpp > CMakeFiles/TodoListApp.dir/src/todo.cpp.i
+
+CMakeFiles/TodoListApp.dir/src/todo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TodoListApp.dir/src/todo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kylee/Documents/Code/to-do-list/src/todo.cpp -o CMakeFiles/TodoListApp.dir/src/todo.cpp.s
+
 CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/imgui.cpp
 CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/imgui.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.s: cmake_force
 CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/imgui_demo.cpp
 CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/imgui_demo.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.s: cmake_force
 CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/imgui_draw.cpp
 CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/imgui_draw.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.s: cmake_force
 CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/imgui_widgets.cpp
 CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/imgui_widgets.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/TodoListApp.dir/imgui/imgui_widgets.cpp.s: cmake_force
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/backends/imgui_impl_sdl2.cpp
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/backends/imgui_impl_sdl2.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_sdl2.cpp.s: cmake_force
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/TodoListApp.dir/flags.make
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o: /Users/kylee/Documents/Code/to-do-list/imgui/backends/imgui_impl_opengl3.cpp
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o: CMakeFiles/TodoListApp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o -MF CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o.d -o CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.o -c /Users/kylee/Documents/Code/to-do-list/imgui/backends/imgui_impl_opengl3.cpp
 
 CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.i: cmake_force
@@ -170,6 +184,7 @@ CMakeFiles/TodoListApp.dir/imgui/backends/imgui_impl_opengl3.cpp.s: cmake_force
 # Object files for target TodoListApp
 TodoListApp_OBJECTS = \
 "CMakeFiles/TodoListApp.dir/src/main.cpp.o" \
+"CMakeFiles/TodoListApp.dir/src/todo.cpp.o" \
 "CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o" \
 "CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o" \
 "CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o" \
@@ -181,6 +196,7 @@ TodoListApp_OBJECTS = \
 TodoListApp_EXTERNAL_OBJECTS =
 
 TodoListApp: CMakeFiles/TodoListApp.dir/src/main.cpp.o
+TodoListApp: CMakeFiles/TodoListApp.dir/src/todo.cpp.o
 TodoListApp: CMakeFiles/TodoListApp.dir/imgui/imgui.cpp.o
 TodoListApp: CMakeFiles/TodoListApp.dir/imgui/imgui_demo.cpp.o
 TodoListApp: CMakeFiles/TodoListApp.dir/imgui/imgui_draw.cpp.o
@@ -192,7 +208,7 @@ TodoListApp: imgui/libimgui.a
 TodoListApp: _deps/sdl2-build/libSDL2.a
 TodoListApp: _deps/glad-build/libglad.a
 TodoListApp: CMakeFiles/TodoListApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TodoListApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kylee/Documents/Code/to-do-list/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable TodoListApp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TodoListApp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
